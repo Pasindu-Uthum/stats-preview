@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+.main-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-card-desktop {
+    width: 1000px;
+    height: auto;
+    border-radius: 10px;
+    background-color: hsl(244, 38%, 16%);
+    overflow: hidden;
+    margin: 10px;
+}
+
+.text-div-desktop {
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding-top: 40px;
+}
+
+.text-div-desktop h1 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 20px;
+    padding: 10px 50px;
+}
+
+.text-div-desktop p {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 20px 50px 100px 50px;
+}
+
+.text-div-desktop span {
+    color: hsl(277, 64%, 61%);
+}
+
+.stats {
+    display: inline-block;
+    padding: 20px;
+}
+
+.stats h2 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.stats span {
+    color: hsla(0, 0%, 100%, 0.6);
+    padding-bottom: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.image-div-desktop{
+    width: 50%;
+    float: left;
+    background-color: hsl(277, 100%, 33%);
+}
+
+.image-div-desktop img, .preview-card-mobile img {
+    width: 100%;
+    mix-blend-mode: darken;
+}
+
+
+
+.hidden-stats {
+    width: 100%;
+    float: left;
+    display: none;
+}
+
+
+/*Mobile version*/ 
+
+.preview-card-mobile {
+    height: auto;
+    border-radius: 10px;
+    background-color: hsl(244, 38%, 16%);
+    overflow: hidden;
+    margin: 10px;
+}
+
+.preview-card-mobile {
+    display: none;
+}
+
+.image-div-mobile {
+    background-color: hsl(277, 100%, 33%);
+}
+
+.text-div-mobile {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.text-div-mobile h1 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 20px;
+    padding: 10px 50px;
+}
+
+.text-div-mobile p {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 20px 50px 50px 50px;
+}
+
+.text-div-mobile span {
+    color: hsl(277, 64%, 61%);
+}
+
+.hidden-stats span {
+    color: white;
+}
+
+
+@media screen and (max-width: 723px) {
+    .stats-container {
+        display: none;
+    }
+    .hidden-stats {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 328px) {
+    .stats {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 589px) {
+    .preview-card-desktop {
+        display: none;
+    }
+    .preview-card-mobile {
+        display: block;
+    }
+    .main-container {
+        display: none;
+    }
+}
